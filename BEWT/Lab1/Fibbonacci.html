@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = parseInt(prompt("Enter any number"));
+        firstnumber=0 , secondnumber=1;
+        for(i=0; i<a; i++){
+            if(i<=1){
+                next = i;
+            }
+            else{
+                next = firstnumber + secondnumber;
+                firstnumber = secondnumber;
+                secondnumber = next;
+            }
+            document.write(next + "<br/>");
+        }
+        
+    </script>
+   
+</body>
+</html>

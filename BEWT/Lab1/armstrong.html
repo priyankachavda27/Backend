@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("Enter any number");
+        len = a.length;
+        a = parseInt(a);
+        let num=a;
+        let ans=0;
+        while(a!=0){
+            let digit = a%10;
+            a= Math.floor(a/10);
+            ans+=Math.pow(digit,len);
+        }
+            
+        if(ans == num){
+            document.write(num + " is armstrong number");
+        }
+        else{
+            document.write(num + " is not armstrong number");
+        }
+    </script>
+</body>
+</html>

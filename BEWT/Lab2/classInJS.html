@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        sayHello() {
+            console.log("Hi, my name is " + this.name);
+        }
+        }
+
+        const p1 = new Person("Alice", 25);
+        p1.sayHello(); // Hi, my name is Alice
+    </script>
+</body>
+</html>

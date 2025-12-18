@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array Destructing
+
+        let number = [10,20,30,40];
+        let [a,b,c] = number
+        document.writeln(a);
+        document.writeln(b);
+        document.writeln(c);
+
+        let num = [50,69,78,80];
+        let [e,,g] = num;
+        document.writeln(e);
+        document.writeln(g);
+
+        //Object destructing
+
+        Student = {
+            name : "Priyanka",
+            age : 20,
+            dept : "CSE",
+            sem : 2
+        }
+        let {name , age} = Student;
+        document.writeln(name);
+        document.writeln(age);
+
+        users = {
+            Name : "Dhruvi",
+            Age : 18,
+            department : "CSE",
+            semester : 4
+        }
+        let {Name,Age,...other} = users
+        console.log(other);
+
+    </script>
+</body>
+</html>

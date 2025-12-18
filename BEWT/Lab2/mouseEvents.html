@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.onmousedown = function(e) {
+        if (e.button == 0) {
+            alert("Left click (button 0)");
+        }
+        if (e.button == 2) {
+            alert("Right click (button 2)");
+        }
+        };
+
+        // Stop the default right‑click menu
+        document.oncontextmenu = function() {
+            return false;
+        };
+    </script>
+</body>
+</html>
